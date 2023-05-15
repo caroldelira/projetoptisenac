@@ -435,31 +435,12 @@ input {
   }
 
   #containerInstagram {
-    height: auto;
-    padding: 0px;
+    display: none;
   }
 
   .h2Responsive,
   .lineTittleResponsive {
     margin-left: 30px;
-  }
-
-  .grid {
-    display: none;
-  }
-
-  .gridResponsive {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .img1 {
-    width: 200px;
-    height: 250px;
-  }
-
-  .divImg1 {
-    padding: 30px;
   }
 
   .centerSpan {
