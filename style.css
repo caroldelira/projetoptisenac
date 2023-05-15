@@ -1,0 +1,485 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* TAGS FIXAS */
+
+.container {
+  padding: 50px 150px 50px 150px;
+}
+
+h2 {
+  color: #414141;
+  font-weight: 400;
+}
+
+.lineTittle {
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #980d24;
+  text-decoration-thickness: 2px;
+}
+
+.lineRight {
+  margin-left: 580px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #980d24;
+  text-decoration-thickness: 2px;
+}
+.lineLeft {
+  margin-right: 580px;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: #980d24;
+  text-decoration-thickness: 2px;
+}
+
+hr {
+  border: 1px solid #980d24;
+}
+
+/* COMPONENTES */
+
+.button {
+  background-color: #980d24;
+  width: 280px;
+  height: 55px;
+
+  border: none;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 16px;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #741928;
+}
+
+.logo {
+  width: 250px;
+  height: 40px;
+}
+
+/* MENU */
+
+#containerHeader {
+  background: url(./image/BG.png) no-repeat center;
+  height: 580px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #414141;
+  font-size: 14px;
+}
+
+.linksMenu {
+  display: flex;
+  gap: 30px;
+}
+
+.link {
+  text-decoration: none;
+  color: #414141;
+}
+
+.link:hover {
+  text-decoration: underline 2px #980d24;
+  text-underline-offset: 5px;
+  animation: linksDecorations 0.3s ease-in;
+}
+
+.menuIcon {
+  display: none;
+}
+
+@keyframes linksDecorations {
+  0% {
+    text-decoration: underline 2px transparent;
+  }
+  100% {
+    text-decoration: underline 2px #980d24;
+  }
+}
+
+/* BANNER */
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.textBanner {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 60px;
+
+  font-size: 22px;
+  color: #414141;
+  line-height: 50px;
+
+  padding-right: 30px;
+}
+
+.bannerImage {
+  width: 650px;
+  margin-right: -120px;
+}
+
+.bannerResponsive {
+  display: none;
+}
+
+/* SOBRE MIM */
+
+#contentSobreMim {
+  display: flex;
+  align-items: center;
+}
+
+.autora {
+  width: 500px;
+  padding: 50px;
+}
+
+.textAutora {
+  margin-top: 20px;
+  padding-right: 150px;
+  color: #414141;
+  font-size: 16px;
+}
+
+/* PRODUTOS */
+
+#containerCard {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 250px;
+
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.102);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px 0px #980d24;
+}
+
+.productTittle {
+  color: #414141;
+  text-align: center;
+  padding: 20px;
+}
+
+.Productbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+/* INSTAGRAM */
+
+#containerInstagram {
+  background: url(./image/BG.png) no-repeat center;
+  height: 500px;
+}
+
+.grid {
+  display: flex;
+}
+
+.gridResponsive {
+  display: none;
+}
+
+.img1 {
+  width: 300px;
+  height: 310px;
+}
+
+.img1:hover {
+  animation: gridInsta 0.6s ease-in-out forwards;
+}
+
+.img2 {
+  width: 150px;
+  height: 150px;
+}
+
+.img2:hover {
+  animation: gridInsta 0.6s ease-in-out forwards;
+}
+
+@keyframes gridInsta {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.divImg1 {
+  padding: 20px;
+}
+.divImg2 {
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* FORM */
+
+.centerSpan {
+  margin: 510px;
+}
+.centerh2 {
+  text-align: center;
+}
+
+#divForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 20px;
+  width: 350px;
+
+  color: #414141;
+
+  box-shadow: none;
+}
+
+input {
+  height: 35px;
+  margin-bottom: 10px;
+}
+
+.formButton {
+  margin-top: 40px;
+  height: 50px;
+}
+
+/*FOOTER*/
+
+#containerFooter {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.redeLogo:hover {
+  animation: gridInsta 0.6s ease-in-out forwards;
+}
+
+.linksMenuFooter {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.pFooter {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 12px;
+}
+
+/* -------- RESPONSIVO ----------*/
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 30px;
+  }
+
+  .lineRight,
+  .lineLeft {
+    display: none;
+  }
+
+  .lineTittle,
+  .lineRight,
+  .lineLeft {
+    text-decoration-thickness: 1px;
+  }
+
+  .button {
+    background-color: #980d24;
+    width: 220px;
+    height: 45px;
+
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+  }
+
+  .button:active {
+    background-color: #741928;
+  }
+
+  .logo {
+    width: 200px;
+    height: 30px;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .linksMenu {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  #containerHeader {
+    height: 730px;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .bannerResponsive {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .bannerImage {
+    margin-right: 0;
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .textBanner {
+    padding: 25px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  #contentSobreMim {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .autora {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+
+  .textAutora {
+    margin-top: 20px;
+    padding-right: 0;
+    text-align: justify;
+  }
+
+  #containerCard {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    margin: 20px 0;
+    width: 200px;
+  }
+
+  .Productbutton {
+    margin-top: 20px;
+  }
+
+  #containerInstagram {
+    height: auto;
+    padding: 0px;
+  }
+
+  .h2Responsive,
+  .lineTittleResponsive {
+    margin-left: 30px;
+  }
+
+  .grid {
+    display: none;
+  }
+
+  .gridResponsive {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img1 {
+    width: 200px;
+    height: 250px;
+  }
+
+  .divImg1 {
+    padding: 30px;
+  }
+
+  .centerSpan {
+    margin: 200px;
+  }
+
+  #divForm {
+    margin-top: 20px;
+  }
+
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  .formButton {
+    width: 100%;
+  }
+}
